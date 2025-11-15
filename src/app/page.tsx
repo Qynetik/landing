@@ -115,6 +115,19 @@ export default function HomePage() {
 											placeholder='you@company.com'
 											className='h-10 flex-1 rounded-lg border border-white/10 bg-slate-900 px-3 text-sm text-slate-50 placeholder:text-slate-500 outline-none ring-0 focus:border-emerald-400/70 focus:ring-1 focus:ring-emerald-400/40'
 										/>
+										<input
+											type='text'
+											name='_gotcha'
+											style={{ display: 'none' }}
+											tabIndex={-1}
+											autoComplete='off'
+										/>
+										<input
+											type='hidden'
+											name='_subject'
+											value='New Early Access Request'
+										/>
+
 										<button
 											type='submit'
 											className='h-10 rounded-lg bg-emerald-500 px-4 text-sm font-medium text-slate-950 transition hover:bg-emerald-400'
